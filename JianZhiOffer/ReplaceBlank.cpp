@@ -7,7 +7,7 @@ public:
         //从后往前替换，复杂度低
         if(str==NULL)
             return; //边界检查1：判断是否为空字符串
-        
+	    
         //先统计字符串中空格的数量
         int blank= 0;
         int rawlength=0;
@@ -38,8 +38,7 @@ public:
             else
             {
                 *p2= *p1;
-                *p2--;
-                
+                *p2--;              
             }
             *p1--;
         }
